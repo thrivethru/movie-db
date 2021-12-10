@@ -1,0 +1,54 @@
+{
+    "name": "movie-db",
+    "version": "1.0.0",
+    "description": "A movie db api",
+    "type": "module",
+    "main": "src/server.js",
+    "jest": {
+        "transform": {}
+    },
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+        "test:report": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage=true --runInBand",
+        "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+        "lint": "eslint src/**/*.js",
+        "lint:fix": "npm run lint -- --fix",
+        "format": "prettier -w src",
+        "seed": "node src/config/initialize-db.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thrivethru/movie-db.git"
+    },
+    "keywords": [],
+    "author": "Mark Warner",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/thrivethru/movie-db/issues"
+    },
+    "homepage": "https://github.com/thrivethru/movie-db#readme",
+    "dependencies": {
+        "@handlebars/allow-prototype-access": "^1.0.5",
+        "express": "^4.17.1",
+        "express-handlebars": "^6.0.2",
+        "handlebars": "^4.7.7",
+        "sequelize": "^6.12.0-alpha.1",
+        "sqlite3": "^5.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.0",
+        "eslint-config-airbnb": "^19.0.2",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "jest": "^27.4.3",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1",
+        "supertest": "^6.1.6"
+    }
+}
