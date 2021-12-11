@@ -16,7 +16,7 @@
         "lint": "eslint src/**/*.js",
         "lint:fix": "npm run lint -- --fix",
         "format": "prettier -w src",
-        "seed": "node src/config/initialize-db.js"
+        "seed": "sqlite3 data/database.sqlite < data/movie-db.sql"
     },
     "repository": {
         "type": "git",

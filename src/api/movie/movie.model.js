@@ -5,8 +5,8 @@ class Movie extends Model {}
 Movie.init(
   {
     title: DataTypes.STRING,
-    runningTime: DataTypes.INTEGER,
-    releaseDate: DataTypes.STRING,
+    releaseYear: DataTypes.STRING,
+    runtimeMinutes: DataTypes.INTEGER,
   },
   {
     sequelize: db,

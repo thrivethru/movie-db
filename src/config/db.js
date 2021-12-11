@@ -10,7 +10,7 @@ const db = new Sequelize({
     underscored: true,
     underscoredAll: true,
     freezeTableName: true,
-    timestamps: true,
+    timestamps: false,
   },
 });
 

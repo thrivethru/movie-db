@@ -4,9 +4,8 @@ class Person extends Model {}
 
 Person.init(
   {
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    suffix: DataTypes.STRING,
+    fullName: DataTypes.STRING,
+    birthYear: DataTypes.STRING,
   },
   {
     sequelize: db,

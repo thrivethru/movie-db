@@ -2,9 +2,12 @@ import express from "express";
 import Handlebars from "handlebars";
 import expressHandlebars from "express-handlebars";
 import { allowInsecurePrototypeAccess } from "@handlebars/allow-prototype-access";
+import modelAssociations from "./api/api.model.js";
 import routes from "./routes.js";
 
 const app = express();
+
+modelAssociations();
 
 const handlebars = expressHandlebars.create({
   handlebars: allowInsecurePrototypeAccess(Handlebars),

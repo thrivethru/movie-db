@@ -4,7 +4,7 @@ class Genre extends Model {}
 
 Genre.init(
   {
-    name: DataTypes.STRING,
+    genre: DataTypes.STRING,
   },
   {
     sequelize: db,

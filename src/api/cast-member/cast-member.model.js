@@ -4,11 +4,12 @@ class CastMember extends Model {}
 
 CastMember.init(
   {
-    character: DataTypes.STRING,
+    characters: DataTypes.STRING,
   },
   {
     sequelize: db,
     modelName: "castMember",
+    tableName: "cast_member",
   }
 );
 
